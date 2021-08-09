@@ -1,0 +1,6 @@
+framework module Pods_BebidasAPI {
+  umbrella header "Pods-BebidasAPI-umbrella.h"
+
+  export *
+  module * { export * }
+}

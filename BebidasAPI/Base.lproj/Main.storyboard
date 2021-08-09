@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BebidasAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GhS-we-nME">
+                                <rect key="frame" x="20" y="44" width="374" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="374" id="FPh-Em-eBj"/>
+                                    <constraint firstAttribute="height" constant="350" id="cbp-ad-KHC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Nome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OJU-Wm-3dI">
+                                <rect key="frame" x="20" y="414" width="374" height="53.5"/>
+                                <fontDescription key="fontDescription" name="Didot-Bold" family="Didot" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="Ingredients:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj8-kS-pvC">
+                                <rect key="frame" x="20" y="566" width="117" height="31"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="31" id="TRF-ub-tcB"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="19"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qvl-1y-gOf">
+                                <rect key="frame" x="20" y="605" width="374" height="120"/>
+                                <color key="backgroundColor" red="0.26051741839999998" green="0.2605243921" blue="0.260520637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="FTa-EJ-Cio"/>
+                                    <constraint firstAttribute="width" constant="374" id="gZ4-kL-a5g"/>
+                                </constraints>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2V-lj-4r8">
+                                <rect key="frame" x="107" y="760" width="200" height="80"/>
+                                <color key="backgroundColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="FlK-Wl-BP8"/>
+                                    <constraint firstAttribute="height" constant="80" id="yX1-8Y-aiC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <state key="normal" title="CREATE DRINK">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getDrink:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N6N-6l-W6m"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzR-MD-aOD">
+                                <rect key="frame" x="20" y="476" width="374" height="75"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32.5" id="NTI-RD-tla"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Didot" family="Didot" pointSize="26"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GhS-we-nME" firstAttribute="trailing" secondItem="OJU-Wm-3dI" secondAttribute="trailing" id="7KM-pl-lV6"/>
+                            <constraint firstItem="E2V-lj-4r8" firstAttribute="top" secondItem="qvl-1y-gOf" secondAttribute="bottom" constant="35" id="Gnt-E6-Kfu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nzR-MD-aOD" secondAttribute="trailing" constant="20" id="H6R-d4-EOR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="E2V-lj-4r8" secondAttribute="bottom" constant="22" id="HVW-aT-uOt"/>
+                            <constraint firstItem="qvl-1y-gOf" firstAttribute="top" secondItem="Hj8-kS-pvC" secondAttribute="bottom" constant="8" symbolic="YES" id="JAB-HI-yOj"/>
+                            <constraint firstItem="Hj8-kS-pvC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="N6Z-67-S36"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OJU-Wm-3dI" secondAttribute="trailing" constant="20" id="Piq-FX-qhY"/>
+                            <constraint firstItem="OJU-Wm-3dI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UKa-DI-pyp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qvl-1y-gOf" secondAttribute="trailing" constant="20" id="WsF-d0-FBt"/>
+                            <constraint firstItem="GhS-we-nME" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="a9v-ts-KAO"/>
+                            <constraint firstItem="GhS-we-nME" firstAttribute="leading" secondItem="OJU-Wm-3dI" secondAttribute="leading" id="gYo-fR-7dT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E2V-lj-4r8" secondAttribute="trailing" constant="107" id="jqX-x8-Orc"/>
+                            <constraint firstItem="OJU-Wm-3dI" firstAttribute="top" secondItem="GhS-we-nME" secondAttribute="bottom" constant="20" id="k8i-yi-vis"/>
+                            <constraint firstItem="qvl-1y-gOf" firstAttribute="top" secondItem="Hj8-kS-pvC" secondAttribute="bottom" constant="8" symbolic="YES" id="lDJ-OT-GQo"/>
+                            <constraint firstItem="Hj8-kS-pvC" firstAttribute="top" secondItem="nzR-MD-aOD" secondAttribute="bottom" constant="16" id="pQX-RP-oT4"/>
+                            <constraint firstItem="nzR-MD-aOD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="prI-ca-oNh"/>
+                            <constraint firstItem="nzR-MD-aOD" firstAttribute="top" secondItem="OJU-Wm-3dI" secondAttribute="bottom" constant="50" id="rOJ-uJ-KsS"/>
+                            <constraint firstItem="qvl-1y-gOf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="t1T-xv-sVo"/>
+                            <constraint firstItem="nzR-MD-aOD" firstAttribute="top" secondItem="OJU-Wm-3dI" secondAttribute="bottom" constant="50" id="uRb-SX-FJF"/>
+                            <constraint firstItem="E2V-lj-4r8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="vr5-5A-Ny9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hj8-kS-pvC" secondAttribute="trailing" constant="277" id="yRk-Ew-Ufk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alcolicoLbl" destination="nzR-MD-aOD" id="eY0-hC-oao"/>
+                        <outlet property="imagemDrink" destination="GhS-we-nME" id="Wf2-dc-ebi"/>
+                        <outlet property="ingredientesLbl" destination="qvl-1y-gOf" id="SdL-10-U9I"/>
+                        <outlet property="nomeDrink" destination="OJU-Wm-3dI" id="m0S-rk-fwu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="40.579710144927539" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+</document>
